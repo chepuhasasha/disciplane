@@ -15,9 +15,10 @@
   },
   "homepage": "https://github.com/sashachepuha/cashcow#readme",
   "workspaces": [
-    "./web",
-    "./mobile",
-    "./desktop"
+    "./frontend/web",
+    "./frontend/mobile",
+    "./frontend/desktop",
+    "./backend/api"
   ],
   "scripts": {
     "dev:web": "npm --workspace=@cashcow/web run serve",
