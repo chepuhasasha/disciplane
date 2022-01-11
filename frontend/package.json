@@ -1,0 +1,30 @@
+{
+  "name": "cashcow",
+  "author": "Sergey Batukov <sashachepuha@gmail.com>",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "root": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashachepuha/cashcow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sashachepuha/cashcow/issues"
+  },
+  "homepage": "https://github.com/sashachepuha/cashcow#readme",
+  "workspaces": [
+    "./web",
+    "./mobile",
+    "./desktop"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace=@cashcow/web run serve",
+    "dev:desktop": "npm --workspace=@cashcow/desktop start",
+    "build:web": "npm --workspace=@cashcow/web run build",
+    "test:web": "npm --workspace=@cashcow/web run test",
+    "preview:mobile": "npm --workspace=@cashcow/mobile run dev:preview",
+    "run:mobile": "npm --workspace=@cashcow/mobile run dev:run"
+  }
+}
