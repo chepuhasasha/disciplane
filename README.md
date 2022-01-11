@@ -1,2 +1,21 @@
+mono repository
 # cashcow.
-## mono repository
+
+### installing
+
+```
+npm install
+```
+<hr>
+
+### Architecture
+
+.   .   .
+
+<hr>
+
+### File tree
+
+.   .   .
+
+<hr>
