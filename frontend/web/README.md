@@ -1,4 +1,4 @@
-# cashcow
+# @cashcow/web
 
 ## Project setup
 ```

@@ -1,1 +1,2 @@
-# cashcow
+# cashcow.
+## mono repository
