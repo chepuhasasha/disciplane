@@ -1,11 +1,13 @@
 const express = require('express')
 const app = express()
+const http = require('http').createServer(app)
+const io = require('socket.io')()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('cashcow API')
+  res.sendFile(__dirname + '/index.html')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+http.listen(port, () => {
+  console.log('start: ok')
 })
