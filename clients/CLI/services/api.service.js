@@ -2,6 +2,10 @@ import axios from "axios";
 import qs from "qs";
 import cnsl from "./log.service.js"
 
+const auth = ({ login, password }) => {
+  cnsl.sucsess('logged in!')
+}
+
 const trades = (pair, limit, cb) => {
   const data = { pair, limit }
   const options = {
@@ -24,4 +28,4 @@ const trades = (pair, limit, cb) => {
     })
 }
 
-export default { trades }
+export default { trades, auth }

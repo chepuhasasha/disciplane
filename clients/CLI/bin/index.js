@@ -1,23 +1,24 @@
 #!/ust/bin/env node
 
-import cnsl from '../services/log.service.js';
 import api from '../services/api.service.js';
+import cnsl from '../services/log.service.js';
 import inquirer from "inquirer";
-import { questions } from './questions.js'
+import scenarios from './scenarios.js'
 
 async function select(array) {
-  const config = {}
+  const result = {}
   for (const q of array) {
     await inquirer.prompt(q).then(answer => {
-      config[q.name] = answer[q.name]
+      result[q.name] = answer[q.name]
     })
   }
-  cnsl.obj(config);
+  return result
 }
 
-
-const init = () => {
-  select(questions)
+async function init() {
+  const login = await select(scenarios.login)
+  api.auth(login)
+  const config = await select(scenarios.config)
 }
 
 init()
