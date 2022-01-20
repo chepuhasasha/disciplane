@@ -14,6 +14,13 @@ export default {
     console.log(text(`↳ ${message}`));
   },
 
+  obj(o) {
+    const status = chalk.bgBlueBright
+    const label = chalk.blueBright('JS OBJECT')
+    console.log(`\n${status(' ')} ${label}`);
+    console.log(o);
+  },
+
   error(message) {
     this.log(
       message,
