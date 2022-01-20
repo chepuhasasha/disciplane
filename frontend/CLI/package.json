@@ -1,0 +1,24 @@
+{
+  "name": "@cashcow/cli",
+  "version": "1.0.0",
+  "description": "CLI for cashcow API",
+  "bin": "./bin/index.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashachepuha/cashcow.git"
+  },
+  "author": "Sergey Batukov <sashachepuha@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sashachepuha/cashcow/issues"
+  },
+  "homepage": "https://github.com/sashachepuha/cashcow#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
+}

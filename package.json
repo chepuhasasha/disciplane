@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/sashachepuha/cashcow#readme",
   "workspaces": [
+    "./frontend/CLI",
     "./frontend/web",
     "./frontend/mobile",
     "./frontend/desktop",
