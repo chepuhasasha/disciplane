@@ -1,6 +1,9 @@
 import chalk from 'chalk';
 
 export default {
+  clear() {
+    console.log("\x1Bc");
+  },
   log(
     message = 'Message...',
     title = 'TITLE',

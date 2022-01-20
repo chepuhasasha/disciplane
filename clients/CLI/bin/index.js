@@ -17,8 +17,8 @@ async function select(array) {
 
 async function init() {
   const login = await select(scenarios.login)
-  api.auth(login)
-  const config = await select(scenarios.config)
+  cnsl.clear()
+  const config = select(scenarios.config)
 }
 
 init()
