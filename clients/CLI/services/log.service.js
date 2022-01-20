@@ -10,15 +10,15 @@ export default {
     const status = chalk.bgHex(primary)
     const label = chalk.hex(primary)
     const text = chalk.hex(secondary)
-    console.log(`\n${status(' ')}${label(title)}`);
-    console.log(text(`↳ ${message} \n`));
+    console.log(`\n${status(' ')} ${label(title)}`);
+    console.log(text(`└ ${message} \n`));
   },
 
   obj(o, title) {
     const status = chalk.bgBlue
     const label = chalk.blue(` ${title} `)
     const prop = chalk.gray
-    console.log(`\n${status(' ')}${label}`);
+    console.log(`\n${status(' ')} ${label}`);
     for (const key in o) {
       console.log(` ${prop(key.toUpperCase() + ':')} ${o[key]}`)
     }
