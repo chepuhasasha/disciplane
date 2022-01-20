@@ -22,3 +22,10 @@ import cashcow from '@cashcow/cli';
 cashcow.auth();
 ```
 <hr>
+
+## Methods
+| method  | args                | description |
+|:-------:|:-------------------:| -----------:|
+|**auth** | _(login, password)_ | auth        |
+
+<hr>
