@@ -2,7 +2,9 @@
   "name": "@cashcow/cli",
   "version": "1.0.0",
   "description": "CLI for cashcow API",
-  "bin": "./bin/index.js",
+  "bin": {
+    "cashcow": "./bin/index.js"
+  },
   "main": "index.js",
   "type": "module",
   "scripts": {

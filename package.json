@@ -15,11 +15,11 @@
   },
   "homepage": "https://github.com/sashachepuha/cashcow#readme",
   "workspaces": [
-    "./frontend/CLI",
-    "./frontend/web",
-    "./frontend/mobile",
-    "./frontend/desktop",
-    "./backend/api"
+    "./clients/CLI",
+    "./clients/web",
+    "./clients/mobile",
+    "./clients/desktop",
+    "./server/api"
   ],
   "scripts": {
     "dev:web": "npm --workspace=@cashcow/web run serve",
