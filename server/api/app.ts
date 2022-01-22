@@ -14,7 +14,7 @@ app.get("/hello", (req, res) => {
   throw new Error("Errrrrrror!");
 });
 app.post("/hello", (req, res) => {
-  res.send("CASHCOW API");
+  res.send("disciplane API");
 });
 
 app.use((err, req, res, next) => {

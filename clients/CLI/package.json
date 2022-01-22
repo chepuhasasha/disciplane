@@ -1,5 +1,5 @@
 {
-  "name": "@cashcow/cli",
+  "name": "@disciplane/cli",
   "version": "1.0.0",
   "description": "CLI for cashcow API",
   "bin": {
