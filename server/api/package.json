@@ -5,8 +5,8 @@
   "author": "Sergey Batukov <sashachepuha@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/sashachepuha/cashcow#readme",
-  "main": "app.js",
-  "type": "module",
+  "main": "./dist/main.js",
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sashachepuha/cashcow.git"
@@ -15,11 +15,13 @@
     "url": "https://github.com/sashachepuha/cashcow/issues"
   },
   "scripts": {
-    "start": "node ./dist/app.js",
+    "start": "node ./dist/main.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "tslog": "^3.3.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.13"
