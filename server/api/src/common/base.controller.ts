@@ -16,6 +16,15 @@ export abstract class BaseController {
     res.sendStatus(201);
   }
 
+  public send<T>(res: Response, status: number, message: T) {
+    res.type("application/json");
+    return res.status(status).json(message);
+  }
+
+  public ok<T>(res: Response, message: T) {
+    return this.send<T>(res, 200, message);
+  }
+
   protected bindRouts(routes: IControllerRoute[]) {
     for (const route of routes) {
       this.logger.log(`[${route.method}] ${route.path}`);
